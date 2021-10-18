@@ -9,7 +9,14 @@ function App() {
         <p>
         Math magicians
         </p>
-         Create project
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
       </header>
     </div>
   );
