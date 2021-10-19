@@ -1,6 +1,7 @@
 body {
   background-color: black;
 }
+
 .table-wrapper {
   height: 100vh;
   display: flex;
@@ -12,20 +13,20 @@ table {
   width: 30%;
 }
 
+th {
+  text-align: center;
+  background-color: #ff8c00;
+  padding: 20px;
+  font-weight: bold;
+}
+
 th:first-child {
   text-align: end;
-  background-color: #8D8F98;
+  background-color: #8d8f98;
   padding: 20px;
   color: #fff;
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
-}
-
-th {
-  text-align: center;
-  background-color: #FF8C00;
-  padding: 20px;
   font-weight: bold;
 }
 
