@@ -1,52 +1,31 @@
 import React from 'react';
+import CalculatorShow from './calculatorShow';
+import CalculatorBtn from './calculatorBtn';
+import calculate from '../logic/calculate.js';
 
 class Calculator extends React.Component {
-  // eslint-disable-next-line no-useless-constructor
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    this.eventHandler = this.eventHandler.bind(this);
+    this.state = {
+      total: 0,
+      next: 0,
+      operation: '',
+    };
   }
 
-  // eslint-disable-next-line class-methods-use-this
+  eventHandler(event) {
+    const resutl = calculate(this.state, event);
+    this.setState(resutl);
+  }
+
   render() {
+    const calculateRes = this.state;
     return (
     <div className = "table-wrapper">
       <table>
-        <thead>
-            <tr>
-            <th colspan="4">0</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <td>AC</td>
-            <td>+/-</td>
-            <td>%</td>
-            <th>÷</th>
-            </tr>
-            <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <th>*</th>
-            </tr>
-            <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <th>-</th>
-            </tr>
-            <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <th>+</th>
-            </tr>
-            <tr>
-            <td colspan="2">0</td>
-            <td>.</td>
-            <th>=</th>
-            </tr>
-        </tbody>
+        <CalculatorShow calculateResult = {calculateRes} />
+        <CalculatorBtn eventHandler={this.eventHandler}/>
       </table>
     </div>
     );
