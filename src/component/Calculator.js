@@ -1,35 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CalculatorShow from './calculatorShow';
 import CalculatorBtn from './calculatorBtn';
 import calculate from '../logic/calculate.js';
 
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.eventHandler = this.eventHandler.bind(this);
-    this.state = {
-      total: 0,
-      next: 0,
-      operation: '',
-    };
-  }
+function Calculator() {
+  const [data, setData] = useState({ total: 0, next: 0, operation: '' });
 
-  eventHandler(event) {
-    const resutl = calculate(this.state, event);
-    this.setState(resutl);
-  }
+  const eventHandler = (event) => {
+    const resutl = calculate(data, event);
+    setData(resutl);
+  };
 
-  render() {
-    const calculateRes = this.state;
-    return (
+  return (
     <div className = "table-wrapper">
       <table>
-        <CalculatorShow calculateResult = {calculateRes} />
-        <CalculatorBtn eventHandler={this.eventHandler}/>
+        <CalculatorShow calculateResult = {data} />
+        <CalculatorBtn eventHandler={eventHandler}/>
       </table>
     </div>
-    );
-  }
+  );
 }
 
 export default Calculator;
