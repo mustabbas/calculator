@@ -3,7 +3,7 @@ import CalculatorShow from './calculatorShow';
 import CalculatorBtn from './calculatorBtn';
 import calculate from '../logic/calculate.js';
 
-function Calculator() {
+const Calculator = () => {
   const [data, setData] = useState({ total: 0, next: 0, operation: '' });
 
   const eventHandler = (event) => {
@@ -19,6 +19,6 @@ function Calculator() {
       </table>
     </div>
   );
-}
+};
 
 export default Calculator;

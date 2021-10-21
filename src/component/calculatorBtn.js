@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CalculatorBtn(props) {
+const CalculatorBtn = (props) => {
   const eventHandler = (e) => {
     props.eventHandler(e.target.id);
   };
@@ -37,6 +37,6 @@ function CalculatorBtn(props) {
         </tr>
       </tbody>
   );
-}
+};
 
 export default CalculatorBtn;

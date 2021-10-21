@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CalculatorShow(props) {
+const CalculatorShow = (props) => {
   const showValue = () => {
     const calculator = props.calculateResult;
     if (calculator.next) {
@@ -18,6 +18,6 @@ function CalculatorShow(props) {
       </tr>
     </thead>
   );
-}
+};
 
 export default CalculatorShow;
