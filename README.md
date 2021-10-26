@@ -16,7 +16,7 @@ Read a random math-related quote.
 
 ## Live Demo
 
-[Live Demo Link](https://mustabbas.github.io/)
+[Live Demo Link](https://mustabbas.github.io/calculator/)
 
 
 ## Getting Started
