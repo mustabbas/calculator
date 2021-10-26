@@ -15,7 +15,7 @@ const Nav = () => (
           >
           </Route>
           <Route
-          exact path="/Calculator" component={Calculator}
+          exact path="/Calc" component={Calculator}
           >
           </Route>
           <Route
