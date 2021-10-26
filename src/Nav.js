@@ -10,18 +10,9 @@ const Nav = () => (
           <div>
               <Header/>
         <Switch>
-          <Route
-          exact path="/" component={Home}
-          >
-          </Route>
-          <Route
-          exact path="/Calc" component={Calculator}
-          >
-          </Route>
-          <Route
-          exact path="/Quote" component={Quote}
-          >
-          </Route>
+        <Route exact path="/calculator" component={Home} />
+        <Route exact path="/calc" component={Calculator} />
+        <Route exact path="/Quote" component={Quote} />
         </Switch>
         </div>
       </Router>
