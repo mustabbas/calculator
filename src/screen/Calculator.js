@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import CalculatorShow from './calculatorShow';
-import CalculatorBtn from './calculatorBtn';
+import CalculatorShow from '../component/calculatorShow.js';
+import CalculatorBtn from '../component/calculatorBtn.js';
 import calculate from '../logic/calculate.js';
 
 const Calculator = () => {
@@ -13,6 +13,7 @@ const Calculator = () => {
 
   return (
     <div className = "table-wrapper">
+      <h1>Let's do some Math !</h1>
       <table>
         <CalculatorShow calculateResult = {data} />
         <CalculatorBtn eventHandler={eventHandler}/>

@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Calculator from './component/Calculator.js';
+import Nav from './Nav.js';
 
 const App = () => (
-    <Calculator />
+    <Nav />
 );
 
 export default App;

@@ -1,16 +1,47 @@
 body {
-  background-color: rgb(11, 10, 10);
+  background-color: burlywood;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: black;
+  color: #fff;
+}
+
+.header-wrapper ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header-wrapper a {
+  padding: 0 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.home-wrapper {
+  margin: 24px;
+  padding: 20px;
+}
+
+.home-wrapper p {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 20px;
 }
 
 .table-wrapper {
-  height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
 }
 
 table {
-  width: 30%;
+  border: 1px solid black;
+  box-shadow: 10px 15px rgb(0, 0, 0);
 }
 
 th {
@@ -26,7 +57,6 @@ th:first-child {
   padding: 20px;
   color: #fff;
   font-size: 24px;
-  line-height: 30px;
   font-weight: bold;
 }
 
@@ -35,4 +65,38 @@ td {
   padding: 20px;
   background-color: #ccc;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-wrapper h1 {
+    display: none;
+  }
+
+  .header-wrapper a {
+    font-size: 14px;
+  }
+
+  .table-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .header-wrapper {
+    margin: 24px;
+    padding: 0 20px;
+  }
+
+  .header-wrapper a {
+    font-size: 24px;
+  }
+
+  table {
+    width: 45%;
+  }
 }
