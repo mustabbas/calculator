@@ -31,7 +31,7 @@ const CalculatorBtn = (props) => {
         <th id ="+">+</th>
         </tr>
         <tr>
-        <td colspan="2">0</td>
+        <td colSpan="2">0</td>
         <td id =".">.</td>
         <th id ="=">=</th>
         </tr>
