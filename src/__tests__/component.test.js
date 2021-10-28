@@ -1,10 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import renderer from 'react-test-renderer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import CalculatorBtn from './calculatorBtn.js';
-import CalculatorShow from './calculatorShow.js';
-import Header from './Header.js';
+import CalculatorBtn from '../component/calculatorBtn.js';
+import CalculatorShow from '../component/calculatorShow.js';
+import Header from '../component/Header.js';
 
 describe('test for calculator button component', () => {
   test('the screen content AC', () => {

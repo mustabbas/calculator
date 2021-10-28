@@ -14,7 +14,7 @@ const CalculatorShow = (props) => {
   return (
     <thead>
       <tr>
-      <th colspan="4">{showValue()}</th>
+      <th colSpan="4">{showValue()}</th>
       </tr>
     </thead>
   );
