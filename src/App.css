@@ -1,39 +1,102 @@
-.App {
-  text-align: center;
+body {
+  background-color: burlywood;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-wrapper {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px solid #ccc;
+  background-color: black;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.header-wrapper ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.header-wrapper a {
+  padding: 0 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.home-wrapper {
+  margin: 24px;
+  padding: 20px;
+}
+
+.home-wrapper p {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 20px;
+}
+
+.table-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+table {
+  border: 1px solid black;
+  box-shadow: 10px 15px rgb(0, 0, 0);
+}
+
+th {
+  text-align: center;
+  background-color: #ff8c00;
+  padding: 20px;
+  font-weight: bold;
+}
+
+th:first-child {
+  text-align: end;
+  background-color: #8d8f98;
+  padding: 20px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+td {
+  text-align: center;
+  padding: 20px;
+  background-color: #ccc;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-wrapper {
+    margin: 0;
+    padding: 0;
   }
 
-  to {
-    transform: rotate(360deg);
+  .header-wrapper h1 {
+    display: none;
+  }
+
+  .header-wrapper a {
+    font-size: 14px;
+  }
+
+  .table-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .header-wrapper {
+    margin: 24px;
+    padding: 0 20px;
+  }
+
+  .header-wrapper a {
+    font-size: 24px;
+  }
+
+  table {
+    width: 45%;
   }
 }

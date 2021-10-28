@@ -1,18 +1,9 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Nav from './Nav.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-        Math magicians
-        </p>
-         Create project
-      </header>
-    </div>
-  );
-}
+const App = () => (
+    <Nav />
+);
 
 export default App;
