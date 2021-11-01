@@ -16,7 +16,8 @@ Read a random math-related quote.
 
 ## Live Demo
 
-[Live Demo Link](https://mustabbas.github.io/calculator)
+[Live Demo Link](https://mustcalculator.herokuapp.com/)
+[Live Demo Link](https://serene-kirch-4f7656.netlify.app/)
 
 
 ## Getting Started
